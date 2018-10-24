@@ -1,5 +1,5 @@
 CREATE TABLE stellfae (
-	stnr INTEGER NOT NULL,
+	stnr VARCHAR(5) NOT NULL,
 	faehnr INTEGER NOT NULL,
 	fgrads VARCHAR(1) NOT NULL,
 	PRIMARY KEY (stnr, faehnr),
