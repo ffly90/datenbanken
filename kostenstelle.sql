@@ -1,5 +1,5 @@
 CREATE TABLE kostenstelle (
-	kstnr INTEGER NOT NULL,
+	kstnr VARCHAR(4) NOT NULL,
 	kstbez VARCHAR(35) NOT NULL,
 	PRIMARY KEY (kstnr)
 )
