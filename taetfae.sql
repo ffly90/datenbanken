@@ -3,7 +3,7 @@ CREATE TABLE taetfae (
 	faehnr INTEGER NOT NULL,
 	fgradt VARCHAR(30),
 	PRIMARY KEY (taetnr, faehnr),
-	FOREIGN KEY (taetnr) REFERENCES tätigkeit,
-	FOREIGN KEY (faehnr) REFERENCES fähigkeit
+	FOREIGN KEY (taetnr) REFERENCES tätigkeit ON DELETE CASCADE ON UPDATE NO ACTION,
+	FOREIGN KEY (faehnr) REFERENCES fähigkeit ON DELETE CASCADE ON UPDATE NO ACTION
 )
 	
