@@ -1,8 +1,9 @@
 CREATE TABLE stellfae (
-	taetnr INTEGER NOT NULL,
+	stnr INTEGER NOT NULL,
 	faehnr INTEGER NOT NULL,
-	fgrads VARCHAR(30),
-	PRIMARY KEY (taetnr, faehnr),
-	FOREIGN KEY (taetnr) REFERENCES tätigkeit
+	fgrads VARCHAR(1) NOT NULL,
+	PRIMARY KEY (stnr, faehnr),
+	FOREIGN KEY (stnr) REFERENCES stelle,
+	FOREIGN KEY (faehnr) REFERENCES fähigkeit
 )
 	
