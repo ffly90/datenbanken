@@ -1,5 +1,5 @@
-
 -- Aufgabe 1
+
 SELECT name,beruf FROM angestellter;
 
 -- Aufgabe 2
@@ -69,5 +69,3 @@ SELECT name,abt_name,proz_arb FROM Pro_Ang pa JOIN projekt pr ON pr.p_nr=pa.p_nr
 -- Aufgabe 18
 
 DELETE FROM angestellter WHERE name='Scheer';
-
-
